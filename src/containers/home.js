@@ -15,17 +15,10 @@ const FlootLeft = styled.div`
 
 export class Home extends Component{
     render(){
-        let date = {
-            day: 28,
-            dayWeek: 0,
-            month: 11,
-            year: 2018
-        }
         return (
         <div>
             <FlootRight>
                 <Clock hour='10:40'/>
-                <Date data={date}/>
             </FlootRight>
         </div>
         )
