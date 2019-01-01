@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Home } from './containers'
-export const App = ()=>{
-    return(
-        <div>
-            <Home/>
-        </div>
-    )
+export class App extends Component{
+    render(){
+        return(
+            <div>
+                <Home/>
+            </div>
+        )
+    }
 }
