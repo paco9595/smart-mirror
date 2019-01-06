@@ -16,7 +16,6 @@ export class Clock extends Component{
     }
     componentDidMount(){
         const d = new Date();
-        console.log(d)
         let date = {
             day: d.getDate(),
             dayWeek: d.getDay(),

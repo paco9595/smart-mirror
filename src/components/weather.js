@@ -17,7 +17,6 @@ export class Weather extends Component {
         getLocationServie().subscribe(loc=>{
             this.setState({location:{country_name: loc.country_name ,region_name: loc.region_name ,city: loc.city}})
             getCurrentWeather(loc.latitude,loc.longitude).subscribe(weather=>{
-                console.log(weather)
                 this.setState({...weather})
             })
         },e=> console.log(e))

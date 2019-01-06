@@ -12,7 +12,6 @@ export const getIpServie = ()=>
 export const getLocationServie = ()=>
     Observable.create(o=>{
         getIpServie().subscribe(res=>{
-            console.log(res)
             fetch(`${baseUrl}${res}?access_key=${access_key}`).then(res=>res.json()).then(res=> o.next(res))
         })  
     })
